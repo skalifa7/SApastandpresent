@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-image: url(images/buildingtower.jpg);
+    background-repeat: no-repeat;
+    background-size: 1100px;
+  }
+.flex-container {
+  display: flex;
+  background-color: rgb(41, 142, 243);
+}
+.flex-container > div {
+  background-color: rgb(237, 177, 113);
+  margin: 20px;
+  padding: 10px;
+  font-size: 30px;
+}
+/* Column container */
+.row {  
+  display: flex;
+}
+/* Sidebar/left column */
+.side {
+  flex: 10%;
+  background-color: rgb(120, 108, 108);
+  padding: 10px;
+</style>
+</head>
+<div class="flex-container">
+  <div><h3>San Antonio</h3><br><h3>Past & Present</h3></div>
+  <div><h6>About</h6></div>
+  <div><h6>Contact</h6></div>
+</div>
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <div class="selections" style="height:60px;">Gallery</div><br>
+    <div class="selections" style="height:60px;">Then & Now</div><br>
+    <div class="selections" style="height:60px;">Videos</div>
+  </div>    
+      
+    </body>
