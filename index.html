@@ -2,41 +2,42 @@
 <html>
 <head>
 <style>
+  body {
+    background-image: url(images/buildingtower.jpg);
+    background-repeat: no-repeat;
+    background-size: 1100px;
+  }
 .flex-container {
   display: flex;
   background-color: rgb(41, 142, 243);
 }
-
 .flex-container > div {
   background-color: rgb(237, 177, 113);
-  margin: 10px;
-  padding: 20px;
+  margin: 20px;
+  padding: 10px;
   font-size: 30px;
 }
 
-<div class="nav">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-</div>
-.nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-}
-.nav a:hover {
-    color: #ddd;
+/* Sidebar/left column */
+.side {
+  flex: 10%;
+  background-color: rgb(120, 108, 108);
+  padding: 10px;
 }
 </style>
 </head>
-<body>
-    <div class="flex-container">
-        <div>San Antonio <br> Past & Present</div>
-      </div>
+<div class="flex-container">
+  <div><h3>San Antonio</h3><br><h3>Past & Present</h3></div>
+  <div><h6>About</h6></div>
+  <div><h6>Contact</h6></div>
+</div>
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <div class="selections" style="height:40px; width: 20px;" >Gallery</div><br>
+    <div class="selections" style="height:60px; width: 20px;">Then & Now</div><br>
+    <div class="selections" style="height:60px; width: 20px;">Videos</div>
+  </div>    
+      
+    </body>
+</html>
