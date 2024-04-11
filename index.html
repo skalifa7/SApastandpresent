@@ -5,39 +5,98 @@
   body {
     background-image: url(images/buildingtower.jpg);
     background-repeat: no-repeat;
-    background-size: 1100px;
-  }
+    background-size: 1100px;}
+
 .flex-container {
   display: flex;
   background-color: rgb(41, 142, 243);
+  opacity: 70%;
+  line-height: 40px;
+
 }
 .flex-container > div {
   background-color: rgb(237, 177, 113);
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
   font-size: 30px;
+  line-height: 10px;
+}
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: orange;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 
-/* Sidebar/left column */
-.side {
-  flex: 10%;
-  background-color: rgb(120, 108, 108);
-  padding: 10px;
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.btn-group .button {
+  display:inline-flex;
+  background-color: #6b5d5d; /* Green */
+  border: 5px solid rgb(35, 32, 32);
+  opacity: 75%;
+  color: white;
+  padding: 50px 100px;
+  text-align: center;
+  text-decoration:wavy;
+  font-size: 40px;
+  cursor: pointer;
+  width: 600px;
+  display: block;
+  box-shadow: 0 15px #1f1e1e;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #483737;
+}
+.button:active {
+  box-shadow: 0 10px #272626;
+  transform: translateY(4px);
 }
 </style>
-</head>
+
+
 <div class="flex-container">
-  <div><h3>San Antonio</h3><br><h3>Past & Present</h3></div>
-  <div><h6>About</h6></div>
-  <div><h6>Contact</h6></div>
+  <div><h1>San Antonio</h1><br><h1>Past & Present</h1></div>
+ <button class="About">About</button>
+ <button class="Contact">Contact</button>
 </div>
-<!-- The flexible grid (content) -->
-<div class="row">
-  <div class="side">
-    <div class="selections" style="height:40px; width: 20px;" >Gallery</div><br>
-    <div class="selections" style="height:60px; width: 20px;">Then & Now</div><br>
-    <div class="selections" style="height:60px; width: 20px;">Videos</div>
-  </div>    
-      
+<div class="btn-group">
+  <button class="button">Gallery</button>
+  <button class="button">Past & Present comparisons</button>
+  <button class="button">Videos</button>
+  <button class="button">Blogs</button>
+</div>  
+</head>
     </body>
 </html>
