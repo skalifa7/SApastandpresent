@@ -5,13 +5,13 @@
   body {
     background-image: url(images/buildingtower.jpg);
     background-repeat: no-repeat;
-    background-size: 1100px;}
-
+    background-size:cover; }
+    
 .flex-container {
-  display: flex;
+  display:grid;
   background-color: rgb(41, 142, 243);
-  opacity: 70%;
-  line-height: 40px;
+  opacity: 60%;
+  line-height: 30px;
 
 }
 .flex-container > div {
@@ -21,40 +21,35 @@
   font-size: 30px;
   line-height: 10px;
 }
-.button {
-  background-color: #04AA6D; /* Green */
-  border: none;
-  color: orange;
-  padding: 16px 32px;
+ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
   text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
 }
 
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #04AA6D;
+li a:hover {
+  background-color: #111;
 }
 
-.button1:hover {
-  background-color: #04AA6D;
-  color: white;
-}
-
-.button2 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
-}
-
-.button2:hover {
-  background-color: #008CBA;
-  color: white;
+.active {
+  background-color: #4CAF50;
 }
 .btn-group .button {
   display:inline-flex;
@@ -83,20 +78,61 @@
   box-shadow: 0 10px #272626;
   transform: translateY(4px);
 }
+  
 </style>
 
-
 <div class="flex-container">
-  <div><h1>San Antonio</h1><br><h1>Past & Present</h1></div>
- <button class="About">About</button>
- <button class="Contact">Contact</button>
-</div>
+  <div><h1>San Antonio</h1><br><h1>Past & Present</h1>
+  </div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News Articles</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#About">About</a></li>
+</ul>
+
 <div class="btn-group">
   <button class="button">Gallery</button>
   <button class="button">Past & Present comparisons</button>
   <button class="button">Videos</button>
   <button class="button">Blogs</button>
-</div>  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 </head>
     </body>
 </html>
