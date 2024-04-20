@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    color: aliceblue;
+    text-shadow: 4px 4px black;
+    background-image: url(images/DHeye\ closeup.jpg);
+    background-repeat:inherit;
+    background-size:cover;
+     }
+
+.flex-container {
+  display:grid;
+  background-color: rgb(234, 173, 93);
+  opacity: 60%;
+  line-height: 15px;
+  margin: 15px;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #0837f4;
+}
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #5f4949;
+}
+.button:active {
+  box-shadow: 0 10px #040404;
+  transform: translateY(4px);
+}
+  
+</style>
+
+<div class="flex-container">
+    <div><h1>San Antonio</h1><br><h1>Past & Present</h1>
+</div>
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#About">About</a></li>
+  </ul>
+
+</head>
+</body>
+</html>

@@ -3,6 +3,8 @@
 <head>
 <style>
   body {
+    color: aliceblue;
+    text-shadow: 4px 4px black;
     background-image: url(images/buildingtower.jpg);
     background-repeat: no-repeat;
     background-size:cover; }
@@ -11,15 +13,16 @@
   display:grid;
   background-color: rgb(41, 142, 243);
   opacity: 60%;
-  line-height: 30px;
-
+  line-height: 20px;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .flex-container > div {
-  background-color: rgb(237, 177, 113);
+  background-color: rgb(127, 86, 42);
   margin: 20px;
   padding: 20px;
-  font-size: 30px;
   line-height: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 ul {
   list-style-type:none;
@@ -45,26 +48,26 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #1202f1;
 }
 
 .active {
   background-color: #4CAF50;
 }
 .btn-group .button {
-  display:inline-flex;
+  display:inline-table;
   background-color: #6b5d5d; /* Green */
   border: 5px solid rgb(35, 32, 32);
-  opacity: 75%;
+  opacity: 80%;
   color: white;
   padding: 50px 100px;
   text-align: center;
-  text-decoration:wavy;
-  font-size: 40px;
+  text-decoration:solid;
+  font-size: 50px;
   cursor: pointer;
   width: 600px;
-  display: block;
   box-shadow: 0 15px #1f1e1e;
+  border-radius: 50%;
 }
 
 .btn-group .button:not(:last-child) {
@@ -72,30 +75,34 @@ li a:hover {
 }
 
 .btn-group .button:hover {
-  background-color: #483737;
+  background-color: #2b2020;
 }
 .button:active {
   box-shadow: 0 10px #272626;
   transform: translateY(4px);
 }
-  
+
+/* selected link */
+a:active {
+  color: blue;}
+
 </style>
+<body>
 
 <div class="flex-container">
   <div><h1>San Antonio</h1><br><h1>Past & Present</h1>
   </div>
 <ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News Articles</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#About">About</a></li>
 </ul>
 
 <div class="btn-group">
-  <button class="button">Gallery</button>
-  <button class="button">Past & Present comparisons</button>
-  <button class="button">Videos</button>
-  <button class="button">Blogs</button>
+  <button class="button" type="Gallery" formaction="Gallery.html">Gallery</button>
+  <button class="button" href="pastnpresent.html">Past & Present comparisons</button>
+  <button class="button" href="https://skalifa7.github.io/SAhistoryfunlinks/">San Antonio Fun Video Links</button>
+  <button class="button" href="Comments.html">Comments</button>
 </div>
 <br>
 <br>
