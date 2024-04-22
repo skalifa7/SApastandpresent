@@ -13,17 +13,23 @@
 .flex-container {
   display:grid;
   background-color: rgb(243, 156, 41);
-  opacity: 60%;
+  opacity: 80%;
   line-height: 20px;
   margin: 15px;
   font-size: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-
+  image-resolution:inherit;
+}
+h2 {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-size 100px;
+  text-align: center;
+  color:aqua
 }
 ul {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow:hidden;
   background-color: #333;
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -40,7 +46,7 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  background-color: #ea0808;
+  background-color: #f97007;
 }
 .btn-group .button:not(:last-child) {
   border-bottom: none; /* Prevent double borders */
@@ -53,18 +59,179 @@ li a:hover {
   box-shadow: 0 10px #040404;
   transform: translateY(4px);
 }
+div.gallery {
+  display: flex;
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+  opacity:100%;
+  text-shadow: none;
+  color:black;
+  font-size: 20px;
+  text-align: center;
+  flex-wrap: wrap;
   
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height:auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}  
 </style>
 
 <div class="flex-container">
     <div><h1>San Antonio</h1><br><h1>Past & Present</h1>
+      <h2>Gallery</h2>
 </div>
 <ul>
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="contact.html">Contact</a></li>
     <li><a href="about.html">About</a></li>
   </ul>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/Mission Espada.jpg">
+      <img src="images/Mission Espada.jpg" alt="Mission Espada" width="600" height="400">
+    </a> 
+    <div class="desc">Mission Espada</div>
+  </div>
 
+<div class="responsive"> 
+  <div class="gallery">
+    <a target="_blank" href="images/Mission Concepcion 1890.jpg">
+      <img src="images/Mission Concepcion 1890.jpg" alt="Mission Concepcion 1890" width="600" height="400">
+    </a>
+    <div class="desc">Mission Conception 1890</div>
+  </div>
+
+<div class="responsive"> 
+  <div class="gallery">
+    <a target="_blank" href="images/Mission Concepcion.jpg">
+      <img src="images/Mission Concepcion.jpg" alt="Mission Concepcion" width="600" height="400">
+    </a>
+    <div class="desc">Mission Conception</div>
+  </div>
+
+<div class="responsive">  
+  <div class="gallery">
+    <a target="_blank" href="images/Mission San Jose.jpg">
+      <img src="images/Mission San Jose.jpg" alt="Mission San Jose" width="600" height="400">
+    </a>
+    <div class="desc">Mission San Jose</div>
+  </div>
+
+<div class="responsive"> 
+  <div class="gallery">
+    <a target="_blank" href="images/San Fernando Cath 1892.jpg">
+      <img src="images/San Fernando Cath 1892.jpg" alt="San Fernando 1892" width="600" height="400">
+    </a>
+    <div class="desc">San Fernado Cathedral 1892</div>
+  </div>
+
+  <div class="responsive">  
+  <div class="gallery">
+    <a target="_blank" href="images/San Fernando Plaza de Armas 1880.jpg">
+      <img src="images/San Fernando Plaza de Armas 1880.jpg" alt="Plaza de Armas 1880" width="600" height="400">
+    </a>
+    <div class="desc">San Fernando Cathedral and Plaza de Armas 1880</div>
+  </div>
+ 
+<div class="responsive">  
+  <div class="gallery">
+    <a target="_blank" href="images/San Fernando Plaza de Armas 2014.jpg">
+      <img src="images/San Fernando Plaza de Armas 2014.jpg" alt="Plaza de Armas 2014" width="600" height="400">
+    </a>
+    <div class="desc">San Fernado Cathedral and Plaza de Armas 2014</div>
+  </div>
+
+  <div class="responsive"> 
+  <div class="gallery">
+    <a target="_blank" href="images/St Joseph's 1894.jpg">
+      <img src="images/St Joseph's 1894.jpg" alt="St Josheph's 1894" width="600" height="400">
+    </a>
+    <div class="desc">St Joseph's Catholic Church 1894</div>
+  </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/stmichaelspretower.jpg">
+      <img src="images/stmichaelspretower.jpg" alt="St. Michael's pre-tower" width="600" height="400">
+    </a>
+    <div class="desc">St. Michael's Cathedral and Shalome Temple before Tower of Americas</div>
+  </div>
+
+<div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="images/stmichaelsinside.jpg">
+        <img src="images/stmichaelsinside.jpg" alt="St Michael's inside" width="600" height="400">
+      </a>
+      <div class="desc">St Michael's inside</div>
+    </div>
+
+<div class="responsive"></div>
+    <div class="gallery">
+      <a target="_blank" href="images/alamowagons.jpg">
+        <img src="images/alamowagons.jpg" alt="Alamo wagons" width="600" height="400">
+      </a>
+      <div class="desc">Alamo with wagons 1860s</div>
+    </div>
+
+<div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="images/Alamo 1890s.jpg">
+          <img src="images/Alamo 1890s.jpg" alt="Alamo 1890s" width="600" height="400">
+        </a>
+        <div class="desc">Alamo 1890s</div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank" href="images/Alamo plaza.jpg">
+            <img src="images/Alamo plaza.jpg" alt="Alamo Plaza" width="600" height="400">
+          </a>
+          <div class="desc">Alamo Plaza</div>
+        </div>
+        <div class="clearfix"></div>
+
+        <div style="padding:6px;">
+  </div>
 </head>
 </body>
 </html>
