@@ -22,6 +22,7 @@
   image-resolution:inherit;
   flex-direction: row;
 }
+.flex-wrap {flex-wrap: wrap;}
 h2 {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   font-size 100px;
@@ -62,7 +63,6 @@ li a:hover {
   transform: translateY(4px);
 }
 div.gallery {
-  display: flex;
   margin: 5px;
   border: 1px solid #ccc;
   width: 180px;
@@ -71,9 +71,7 @@ div.gallery {
   color:black;
   font-size: 20px;
   text-align: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  
+  float: left;
 
 }
 
@@ -123,6 +121,7 @@ div.desc {
     <div><h1>San Antonio</h1><br><h1>Past & Present</h1>
       <h2>Gallery</h2>
 </div>
+<div class="flex-container flex-wrap">
 <ul>
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="contact.html">Contact</a></li>
@@ -272,6 +271,7 @@ div.desc {
                     </div>
             </div>
       </div>
+              </div>
 </head>
 </body>
 </html>
